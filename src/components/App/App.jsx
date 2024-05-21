@@ -16,11 +16,19 @@ function App() {
 	bad: 0
   })
 
+
+  const updateFeedback = feedbackType => {
+    setState({...state, [feedbackType]: state[feedbackType] + 1})
+    
+  }
+
+
+
   return (
     <>
       <Descriptions />
       
-      <Options/>
+      <Options updateFeedback ={updateFeedback} />
 
     <Feedback state={state}/>
 

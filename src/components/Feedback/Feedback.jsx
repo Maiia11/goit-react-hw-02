@@ -4,9 +4,9 @@ const Feedback = ({state}) =>{
     return (
         <div>
         <ul>
-          <li>{ state.good}</li>
-          <li>{ state.neutral}</li>
-          <li>{ state.bad }</li>
+          <li> Good: { state.good}</li>
+          <li> Neutral: { state.neutral}</li>
+          <li> Bad: { state.bad }</li>
         </ul>
     </div>
     )
