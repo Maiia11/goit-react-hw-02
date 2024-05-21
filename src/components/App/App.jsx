@@ -44,10 +44,9 @@ function App() {
       <Descriptions />
 
       <Options updateFeedback={updateFeedback} totalFeedback ={totalFeedback} resetButton={resetButton} />
-      {(totalFeedback > 0) && <Feedback state={state} totalFeedback={totalFeedback} positiveFeedback={positiveFeedback} />}
+      {totalFeedback > 0 ? <Feedback state={state} totalFeedback={totalFeedback} positiveFeedback={positiveFeedback} /> : <Notification totalFeedback={totalFeedback} />}
 
-      <Notification totalFeedback={totalFeedback} />
-      
+    
     </>
  
   )
