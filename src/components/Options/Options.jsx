@@ -9,6 +9,9 @@ const Options = ({ updateFeedback, totalFeedback, resetButton }) => {
         <button className={css.btn} onClick={() => updateFeedback('bad')}>Bad</button>
         {totalFeedback > 0 && <button className={css.btn} onClick={resetButton}>Reset</button>} 
         
+            
+
+            
         </div>
 
     )
